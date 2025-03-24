@@ -1,4 +1,4 @@
-Wikipedia Data Fetcher
+# Wikipedia Data Fetcher
 
 This project allows users to fetch data from Wikipedia using the Wikipedia API and display the results on a webpage. It uses HTML, CSS, JavaScript, and AJAX to provide a seamless user experience.
 Features
