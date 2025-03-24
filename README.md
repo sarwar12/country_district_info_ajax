@@ -1,67 +1,45 @@
-Wikipedia Data API Integration
+Wikipedia Data Fetcher
 
-This project utilizes the Wikipedia API to collect data from Wikipedia. It provides users with easy access to information from Wikipedia articles.
+This project allows users to fetch data from Wikipedia using the Wikipedia API and display the results on a webpage. It uses HTML, CSS, JavaScript, and AJAX to provide a seamless user experience.
 Features
 
-    Fetches data from Wikipedia using the API
+    Fetches article data from Wikipedia using the Wikipedia API.
 
-    Returns data in JSON format
+    Displays the article title and an introductory excerpt in the browser.
 
-    Allows searching for specific keywords or articles
+    Built using HTML, CSS for the frontend design, and JavaScript with AJAX for API interaction.
 
-    Uses various Wikipedia API features such as search, page information, etc.
+    Allows users to input a query and fetch information dynamically.
 
 Installation
 Prerequisites
 
-To run this project, you need to have the following installed on your system:
+Make sure you have a modern web browser to view and interact with this application. No server-side setup is required, as everything runs in the browser.
+Steps to Run the Project:
 
-    Python 3.x
+    Clone or download the project files to your local machine.
 
-    requests (Python library)
+    Ensure you have the following files in your project directory:
 
-Installation Steps:
+        index.html
 
-    Navigate to the project directory.
+        style.css
 
-    Run the following command in your terminal:
+        custom.js
 
-    pip install -r requirements.txt
-
-    Now you are ready to use the API!
+    Open the index.html file in any modern web browser to view and use the application.
 
 Usage
 
-Here’s an example of how to fetch data from Wikipedia using the API:
+    Open the project folder and locate the index.html file.
 
-import requests
+    Double-click on index.html to open it in your web browser.
 
-def get_wikipedia_data(query):
-    url = f"https://en.wikipedia.org/w/api.php"
-    params = {
-        'action': 'query',
-        'format': 'json',
-        'titles': query,
-        'prop': 'extracts',
-        'exintro': True
-    }
-    response = requests.get(url, params=params)
-    data = response.json()
+    Click on the "Search" button to fetch and display the summary of the article.
 
-    return data
-
-# Example:
-query = "Python_(programming_language)"
-data = get_wikipedia_data(query)
-print(data)
-
-This example fetches information related to the article "Python (programming language)" from Wikipedia and outputs the data in JSON format.
-Configuration
-
-If you need to customize the settings for the project, you can modify the config.py file. Here you can change the API URL or other settings if needed.
 Contributing
 
-If you'd like to contribute to this project, please feel free to create a pull request or open an issue.
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. Any bug fixes, improvements, or suggestions are welcome!
 License
 
 This project is licensed under the MIT License.
