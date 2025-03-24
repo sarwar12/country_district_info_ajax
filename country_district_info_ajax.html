@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia API AJAX (বাংলা)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <header class="heaer_area"> 
+        <div class="container"> 
+            <img class="img-fluid" src="https://www.pngarts.com/files/9/Wikipedia-Logo-Download-Transparent-PNG-Image.png" alt="">
+        </div>
+    </header>
+    <!-- Wikipedia Area Star -->
+    <section class="wiki_area"> 
+        <div class="container"> 
+            <h1>Wikipedia পৃষ্ঠার তথ্য</h1>
+
+            <!-- ভাষা নির্বাচন ড্রপডাউন -->
+            <label for="language">ভাষা নির্বাচন করুন:</label>
+            <select id="language">
+                <option value="bn">বাংলা</option>
+                <option value="en">ইংরেজি</option>
+            </select>
+
+            <br><br>
+
+            <!-- পৃষ্ঠার নাম ইনপুট -->
+            <label for="searchTerm">পৃষ্ঠার নাম লিখুন:</label>
+            <input type="text" id="searchTerm" placeholder="পৃষ্ঠার নাম লিখুন">
+            
+            <button onclick="fetchWikipediaData()">তথ্য দেখুন</button>
+
+            <div id="info-container"></div>
+        </div>
+    </section>
+    <!-- Wikipedia Area Stop -->
+    
+    <footer class="copyright_area"> 
+        <div class="container"> 
+            <p>Copyright &copy; <a href="https://www.facebook.com/w3sarwar">G Sarwar</a></p>
+        </div>
+    </footer>
+
+
+<script src="custom.js"></script>
+</body>
+</html>
