@@ -37,6 +37,7 @@ ul {
 li {
     margin-bottom: 10px;
 }
+.heaer_area{margin-bottom: 120px;}
 .heaer_area img {
     height: 141px;
     margin-bottom: 50px;
@@ -47,7 +48,7 @@ li {
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,205,252,0.09845945214023111) 100%);
     padding: 20px 0;
-    margin-top: 120px;
+    margin-top: 180px;
   }
   .copyright_area p {
     margin: 0;
